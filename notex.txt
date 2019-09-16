@@ -1,0 +1,46 @@
+Key Terms
+    Linear search
+    Binary search
+    Divide and conquer
+    Depth-first search (DFS)
+    Breadth-first search (BFS)
+    In-order search
+    Pre-ordering
+    Post-ordering
+
+Linear Search:
+    -arr.indexOf(someValue) 
+        -implemented by taking a look at all values
+
+Binary Search:
+    -works only on sorted arrays
+    -take look at middle and see if you are bigger or smaller.
+    -discard the bad array
+    -repeat step with good array.
+    -logarithmic time complexity
+    -sometimes called divide and conquer approach.
+
+Searching and Traversal in a tree:
+    1. Depth of first search (DFS)
+        -start at node.
+        -go as far down as you can (all nodes have been visited)
+        -when you reach bottom something with no node 
+        -backtracking
+    2. Breadth of first search (BFS)
+        -works across the rows of a tree.
+        -top row handled first, then 2nd ...
+        -"First-in-first-out approach"
+        -store siblings in the queue and process them in order.
+        -Visit a node add it to queue. 
+        -Remove the node from the queue
+        -Then visit the children which we again will add to the queue
+
+    *Ordering:
+        -in-order traversal search 
+            -when we searched left first then handle the node then traverse right.
+        -pre-order traversal  
+            -handle node then handle branches.
+        -post-order traversal  
+            -handle branches then handle node
+        **each method of ordering will give you a different order of values
+    

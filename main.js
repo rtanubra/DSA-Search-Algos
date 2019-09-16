@@ -1,0 +1,1 @@
+const {linearSearch, binarySearch} = require('./searches')
